@@ -1,0 +1,33 @@
+div.form-content {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+form {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+form input[type=text] {
+    padding: 8px;
+    width: 60%;
+    margin: 8px 0;
+}
+
+form input[type=submit] {
+    padding: 8px;
+    width: 60%;
+    margin: 8px 0;
+}
