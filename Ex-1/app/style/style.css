@@ -1,7 +1,13 @@
+body {
+    background: rgb(27, 20, 142);
+    background: linear-gradient(45deg, rgb(25, 65, 173) 0%, rgba(39, 68, 193, 1) 16%, rgba(0, 212, 255, 1) 100%);
+    color: #efefef;
+    line-height: 1.6;
+}
+
 div.form-content {
     width: 100%;
     height: 100vh;
-    margin: auto;
 }
 
 form {
@@ -10,24 +16,46 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    margin: auto;
 }
 
 form h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 26px;
+    font-size: 42px;
     font-weight: 800;
-    margin-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+form h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    margin-top: 24px;
 }
 
 form input[type=text] {
-    padding: 8px;
-    width: 60%;
+    padding: 12px;
     margin: 8px 0;
+    background: none;
+    border: 2px solid #efefef;
+    color: #efefef;
+    font-size: 18px;
+}
+
+form input[type=radio] {
+    padding: 12px;
+    margin: 8px 0;
+    background: none;
+    border: 2px solid #efefef;
+    color: #efefef;
+    font-size: 18px;
 }
 
 form input[type=submit] {
-    padding: 8px;
-    width: 60%;
+    padding: 12px;
     margin: 8px 0;
+    background: #efefef;
+    border: 2px solid #efefef;
+    color: rgba(39, 68, 193, 1) 16%;
+    font-size: 18px;
 }
