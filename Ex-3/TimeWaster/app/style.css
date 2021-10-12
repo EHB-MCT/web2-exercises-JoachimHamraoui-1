@@ -1,0 +1,27 @@
+body {
+    font-family: arial;
+}
+
+h1 {
+    margin: 24px 0 0 24px;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+div#movie-details {
+    width: 60%;
+    margin: auto;
+    margin-top: 48px
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 400;
+}
