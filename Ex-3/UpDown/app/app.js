@@ -1,32 +1,37 @@
-'use strict';
+let magicNumber = 0;
 
-window.onload = function() {
-    console.log('loaded')
-    let randomNumber = Math.floor(Math.random() * 20);
-    let inputNumber = document.getElementById('number').value;
-    console.log(randomNumber);
+window.onload = function(){
+    // Generate first number
+    generateNumber();
 
-    document.getElementById('form').addEventListener('submit', e => {
-        e.preventDefault();
-        compareNumber(inputNumber);
+    document.getElementById('guessBtn').addEventListener('click', function(event){
+        let message = '';
+        compareNumber(document.getElementById('input').value).then(
+            result => addMessage(result, 'S'),
+            error => addMessage(error, 'E')
+        );  
+    });
+}
+function compareNumber(nr){
+    return new Promise(function(resolve,reject){
+        //compare nr with magicnumber
 
-    })
+        if(nr < magicNumber) reject('Go higher, you noob!')
+        else if(nr > magicNumber) reject('Go lower, you fool!')
+        else if(nr == magicNumber) resolve("Congratz! You go champ!")
+    });
+}
 
-    function compareNumber(nr) {
-        console.log(nr);
+function addMessage(m, type){
+    
+    document.getElementById('messages').innerHTML = 
+    `<div class="alert 
+    ${type == 'S' ? 'alert-success' : 'alert-danger'}"  role="alert">
+        ${m}
+    </div>`;
+}
 
-        if(nr > randomNumber) {
-            console.log('guess lower');
-        } else if (nr < randomNumber) {
-            console.log('guess up');
-        } else if (nr == randomNumber) {
-            console.log('You have won');
-        }
-
-    }
-
-    let promise = new Promise(function(resolve, reject) {
-        console.log('Start of promise');
-    })
-
+function generateNumber(){
+    magicNumber = Math.floor(Math.random() * 21);
+    return magicNumber;
 }

@@ -1,0 +1,90 @@
+
+{
+
+    "name": "Joachim",
+
+    "mangas": [
+
+        {
+
+            "mangaName": "Dragon Ball",
+
+            "mangaScore": 10
+
+        },
+
+        {
+
+            "mangaName": "Akira",
+
+            "mangaScore": 10
+
+        },
+
+        {
+
+            "mangaName": "Slam Dunk",
+
+            "mangaScore": 10
+
+        },
+
+        {
+
+            "mangaName": "Crows",
+
+            "mangaScore": 9.5
+
+        },
+
+        {
+
+            "mangaName": "Chainsaw Man",
+
+            "mangaScore": 9
+
+        },
+
+        {
+
+            "mangaName": "Gunnm",
+
+            "mangaScore": 8.5
+
+        },
+
+        {
+
+            "mangaName": "Soul Eater",
+
+            "mangaScore": 8.2
+
+        },
+        {
+
+            "mangaName": "FullMetal Alchemist",
+
+            "mangaScore": 7.5
+
+        },
+        {
+
+            "mangaName": "Rokudenashi Blues",
+
+            "mangaScore": 10
+
+        },
+        {
+
+            "mangaName": "Ashita no Joe",
+
+            "mangaScore": 9.3
+
+        }
+
+        
+
+    ]
+
+}
+
