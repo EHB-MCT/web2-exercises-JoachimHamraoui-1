@@ -1,0 +1,7 @@
+{
+    "baseUrl": "mongodb+srv://root:root@web2-cluster.nwqwf.mongodb.net/session5?retryWrites=true&w=majority",
+    "username": "root",
+    "pw": "root",
+    "db": "session5",
+    "finalUrl": "mongodb+srv://root:root@web2-cluster.nwqwf.mongodb.net/session5?retryWrites=true&w=majority"
+}
